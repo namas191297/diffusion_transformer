@@ -15,7 +15,6 @@
 
 import torch.nn as nn
 import torch
-import numpy as np
 
 class PatchEmbedding(nn.Module):
     def __init__(self, patch_size=32, embedding_size=256, image_height=512, image_width=512, image_channels=3):
