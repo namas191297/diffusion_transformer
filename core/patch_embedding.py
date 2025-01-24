@@ -10,7 +10,6 @@
    Since transformers are order-agnostic, we will also be applying positional encoding to the patches in order to preserve the information about their relative 
    position in the input, allowing the model to understand the order of the tokens. Unlike CNN, Transformers do not preserve the spatial relationship between
    pixels since they are not aware of the spacial relationship between the tokens, hence, they need to be fed this information.
-
    '''
 
 import torch.nn as nn

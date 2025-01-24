@@ -7,7 +7,7 @@
    One head focuses on the relationship between the dog and the leash.
    Another head captures the interaction between the tree and the sky.
    A third head might focus on the relationship between the ball and the ground.
-   '''
+'''
 
 import torch.nn as nn
 import torch
