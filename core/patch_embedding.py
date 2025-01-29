@@ -24,10 +24,7 @@ class PatchEmbedding(nn.Module):
         self.image_width = image_width
         self.image_height = image_height
         self.image_channels = image_channels
-        if self.image_height == self.image_width:
-            self.no_patches = (self.image_height // self.patch_size) ** 2 # H // P * W // P, since H and W is same, we take it's square.
-        else:
-            self.no_patches = (self.image_height // self.patch_size) * (self.image_width // self.patch_size)
+        self.no_patches = (self.image_height // self.patch_size) * (self.image_width // self.patch_size)
         self.embedding_size = embedding_size
 
         # Define the module layers

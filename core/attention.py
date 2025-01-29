@@ -87,6 +87,7 @@ class MultiHeadedAttention(nn.Module):
 
         return output
     
+
 if __name__ == '__main__':
     num_patches = 32
     embedding_size = 512
